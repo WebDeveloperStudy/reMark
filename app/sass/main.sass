@@ -1,0 +1,1419 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+html
+    font-size: 10px
+
+body
+	font-size: 16px
+	min-width: 200px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+p,h1,h2,h3,h4,h5,span
+    margin: 0
+    padding: 0
+.container
+    max-width: 970px
+footer
+    width: 100vw
+    height: 14rem
+    background-color: #44cb7a
+    .container
+        padding-top: 1.5rem
+//Хедер
+header, footer
+    overflow: hidden
+    width: 100vw
+    margin: 0 auto
+    z-index: 100
+    .container
+        .col-md-6
+            padding-left: 3rem
+        .col-sm-6
+            padding-left: 5.4rem
+        .logo
+            height: 10rem
+            p
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%,-50%)
+                font-size: 10rem
+                font-family: $la_C
+                color: #fff
+        .descript
+            height: 10rem
+            .descript-wrap
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                p
+                    font-size: 1.9rem
+                    font-family: $PtSans-R
+                    color: #fff
+                .text-wrap
+                    clear: both
+                    p
+                        font-size: 1.4rem
+                        font-family: $PtSans-R 
+                        color: #fff
+                .line
+                    position: absolute
+                    left: 16.2%
+                    
+                    .line-right
+                        background-image: -moz-linear-gradient( 0deg, rgb(255,255,255) 0%, rgba(255,255,255,0) 100%);
+                        background-image: -webkit-linear-gradient( 0deg, rgb(255,255,255) 0%, rgba(255,255,255,0) 100%);
+                        background-image: -ms-linear-gradient( 0deg, rgb(255,255,255) 0%, rgba(255,255,255,0) 100%);
+                        float: left
+                        width: 13.8rem
+                        height: 1px
+                        z-index: 680
+                        margin-left: 3px
+                        margin-top: 1px
+                    .line-left
+                        background-image: -moz-linear-gradient( -180deg, rgb(255,255,255) 0%, rgba(255,255,255,0) 100%);
+                        background-image: -webkit-linear-gradient( -180deg, rgb(255,255,255) 0%, rgba(255,255,255,0) 100%);
+                        background-image: -ms-linear-gradient( -180deg, rgb(255,255,255) 0%, rgba(255,255,255,0) 100%);
+                        float: left
+                        width: 13.8rem
+                        height: 1px
+                        z-index: 678
+                        margin-top: 1px
+                    .line-center
+                        border-radius: 50%;
+                        background-color: rgb(255, 255, 255);
+                        float: left
+                        width: 3px
+                        height: 3px
+                        z-index: 679
+                        margin-left: 3px
+                        
+                    
+        .contact
+            height: 10rem
+            p
+                width: 23rem
+                font-size: 2.9rem
+                font-family: $PtSans-R
+                color: #fff
+            a
+                text-decoration: none
+                .phonecall
+                    border: 0.1rem solid #fff 
+                    border-radius: 1.75rem           
+                    width: 23rem
+                    height: 3.5rem
+                    p
+                        text-align: center
+                        font-size: 1.6rem
+                        font-family: $PtSans-R
+                        color: #fff
+//Первый Экран
+.first-screen  
+    margin: 0 auto
+    width: 100vw
+    height: 80rem
+    color: #fff
+    position: relative
+    z-index: 10
+    .background
+        position: absolute
+        width: 100%
+        height: 100%
+        z-index: 0
+        .container-fluid
+            width: 100%
+            height: 100%
+            padding: 0
+            overflow: hidden
+            .row
+                height: 100%
+            .col-md-3, .col-sm-3, .col-xs-4
+                padding: 0
+                overflow: hidden
+                height: 26.7rem
+            .img-responsive
+                height: 100%
+                width: 100%
+        &:after
+            content: ''
+            background: linear-gradient( 90deg, rgb(75,51,93) 0%, rgb(123,37,187) 100%)
+            opacity: 0.851
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
+                
+    .main-content
+        position: relative
+        height: 87.5%
+        .container    
+            height: 100%
+            position: relative
+            .text-wrap 
+                position: absolute
+                top: 2%
+                left: 50%
+                transform: translate(-50%,-2%)
+                text-align: center
+                line-height: 1.1
+                width: 100%
+                span
+                    font-size: 5.3rem
+                    font-family: $PtSans-R
+
+                p
+                    font-size: 3.2rem
+                    font-family: $PtSans-R
+            .benefit
+                position: absolute
+                top: 29%
+                left: 50%
+                transform: translate(-50%,-29%)
+                width: 100%
+                padding-left: 2.5rem
+                .row    
+                    width: 100%
+                .col-md-4
+                    padding: 0
+                img
+                    float: left
+                    margin-right: 1rem   
+                p
+                    font-size: 1.8rem
+                    font-family: $PtSans-R
+                    line-height: 1.2
+            .row
+                position: absolute
+                top: 64.5% 
+                width: 100%
+                transform: translateY(-64.5%)
+            .form-wrap
+                border-radius: 1rem
+                background-color: rgba(153, 98, 195, 0.502)
+                width: 100%
+                height: 23rem
+                z-index: 1
+                .text-wrap-2
+                    p
+                        font-size: 2.7rem
+                        font-family: $PtSans-R
+                        font-weight: 100
+                        text-align: center
+                        padding-top: 0rem
+
+                form
+                    height: 12rem
+                    position: relative
+                    .row
+                        padding: 0 2rem
+                        top: 60%
+                        left: 0
+                    .col-md-6
+                        padding: 0.5rem
+                    input
+                        border: 0.1rem solid #fff
+                        border-radius: 0.5rem
+                        width: 100%
+                        height: 4.3rem
+                        background: transparent
+                        padding-left: 1.5rem
+                        &::-webkit-input-placeholder
+                            color: #fff
+                            font-size: 1.5rem
+                            font-family: $PtSans-I
+
+                    button
+                        border: 0.1rem solid rgb(68, 203, 122)
+                        border-radius: 0.5rem
+                        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2),inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
+                        width: 100%
+                        height: 4.3rem
+                        background-color: rgb(68, 203, 122)
+                        font-size: 2rem
+                        font-family: $PtSans-R
+                        text-align: center 
+
+                .info
+                    font-size: 1.4rem
+                    font-family: $PtSans-R
+                    text-align: center 
+                    opacity: 1
+                    color: #fff
+
+            a
+                position: absolute
+                bottom: 5%
+                left: 50%
+                transform: translate(-50%, 5%)
+                text-decoration: none
+                
+        
+//Основная цель
+.main-aim
+    width: 100vw
+    .aim-wrap
+        height: 22rem
+        background-color: #44cb7a
+        text-align: center
+        position: relative
+        img
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+
+        h4
+            margin-top: 4rem
+            font-size: 2.7rem
+            font-family: $PtSans-B
+            color: #fff
+            margin-bottom: 3rem
+        
+        .text-wrap   
+            line-height: 1.1
+            font-size: 2.4rem
+            font-family: $PtSans-R
+            color: #fff
+            padding: 0
+            margin: -0.5rem
+        
+//Достижения
+.achievement
+    width: 100vw
+    color: #5d5d5d
+    .normal
+        background-color: #f8f8f8
+        .col-md-3, .col-sm-3
+            .img-wrap
+                margin-left: 2rem
+    .reverse
+        background-color: #fff
+    .achiev-item
+        padding: 5rem 0
+        .text-wrap
+           
+            h5
+                font-family: $PtSans-B
+                font-size: 2rem
+            span
+                font-family: $PtSans-I
+                font-size: 1.6rem
+            p
+                font-family: $PtSans-R
+                font-size: 1.6rem
+        .img-wrap
+            border-radius: 50%;
+            background-color: rgb(67, 67, 67);
+            box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+            width: 18rem
+            height: 18rem
+            overflow: hidden
+            position: relative
+            
+        &:nth-child(1)
+            img
+                position: absolute
+                width: 26.7rem
+                height: 20rem
+                left: -8%
+            .second-txt
+                p
+                    &::before
+                        content: '7 полных классов '
+                        font-family: $PtSans-B
+                        font-size: 1.6rem
+                    &::after
+                        content: ' за 2 месяца'
+                        font-family: $PtSans-B
+                        font-size: 1.6rem
+        &:nth-child(2)
+            img
+                width: 24.4rem
+                height: 18.3rem
+                margin-left: -2rem
+            .second-txt
+                p
+                    &::after
+                        content: ' за 7 недель — 12 000 000 рублей'
+                        font-family: $PtSans-B
+                        font-size: 1.6rem
+        &:nth-child(3)
+            img
+                width: 26.9rem
+                height: 20.1rem
+                margin-left: -8rem
+            .second-txt
+                p
+                    &::before
+                        content: 'Увеличение продаж в 4 раза '
+                        font-family: $PtSans-B
+                        font-size: 1.6rem
+                  
+        &:nth-child(4)
+            img
+                width: 26.1rem
+                height: 19.7rem
+                margin-left: -7rem
+                margin-top: -1.5rem
+            .second-txt
+                p
+                    font-family: $PtSans-B
+                    font-size: 1.6rem
+        &:nth-child(5)
+            img
+                width: 26.7rem
+                height: 20rem
+                margin-left: -1.2rem
+            .second-txt
+                p
+                    font-family: $PtSans-B
+                    font-size: 1.6rem
+        &:nth-child(6)
+            img
+                width: 26.7rem
+                height: 20rem
+                margin-left: -8rem
+            .second-txt
+                p
+                    font-family: $PtSans-B
+                    font-size: 1.6rem
+//Преимущества
+.advantages, .portfolio
+    width: 100vw
+    .advantages-wrap
+        height: 22rem
+        overflow: hidden
+        position: relative
+        .container
+            width: 100%
+            height: 100%
+            position: relative
+            .text-wrap
+                margin-top: 0
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+                z-index: 100
+                p
+                    font-size: 2.7rem
+                    font-family: $PtSans-B
+                    color: #fff
+                    line-height: 1.2
+                    text-align: center
+                    margin-top: 0
+        .arrow
+            position: absolute
+            width: 100%
+            height: 100%
+            z-index: 5
+            img
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%)
+        .img-wrap
+            position: absolute
+            width: 100%
+            height: 100%
+            z-index: 0
+            overflow: hidden
+            .img-responsive
+                transform: translateY(-35%)
+                position: absolute
+                top: 35%
+                z-index: 1
+            &:before
+                content: ''
+                position: absolute
+                width: 100%
+                height: 100%
+                background: linear-gradient( 0deg, rgb(123,37,187) 0%, rgb(42,0,255) 100%)
+                opacity: 0.89
+                z-index: 4
+        
+
+
+//Достижения
+.advant
+    width: 100vw
+    color: #5d5d5d
+    .col-md-5
+        padding-left: 3rem
+        padding-right: 3rem
+    .normal
+        background-color: #f8f8f8
+        .col-md-3
+            .img-wrap
+                //margin-left: 2rem
+                background: linear-gradient( -90deg, #7b25bb  0%, #2a00ff 100%) 
+                .img-wrap-2
+                    background: #f8f8f8 
+                    
+    .reverse
+        background-color: #fff
+    .advant-item
+        padding: 5rem 0
+        .text-wrap
+            h5
+                font-family: $PtSans-B
+                font-size: 2rem
+            p
+                padding-top: 1rem
+                line-height: 1.2
+                font-family: $PtSans-R
+                font-size: 1.6rem
+        .img-wrap
+            background: linear-gradient( 90deg, #7b25bb  0%, #2a00ff 100%) 
+            width: 18.4rem
+            height: 18.4rem 
+            border-radius: 50%
+            position: relative
+            .img-wrap-2
+                border-radius: 50%
+                width: 18rem
+                height: 18rem
+                overflow: hidden
+                background: #fff
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+                
+                img
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+           
+            
+    
+                    
+.portfolio
+    width: 100%
+    .advantages-wrap
+        .img-wrap
+            .img-responsive
+                transform: translateY(-15%) scale(1.8)
+                position: absolute
+                top: 15%
+                right: 5%
+                z-index: 1
+        .text-wrap
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            z-index: 100
+            p
+                font-size: 2.7rem
+                font-family: $PtSans-B
+                color: #fff
+                line-height: 1.2
+                text-align: center
+
+        .arrow
+            img
+                position: absolute
+                left: 50%
+                top: 90%
+                transform: translate(-50%, -90%)
+    .examples
+        width: 100%
+        z-index: 0
+        height: 80rem
+        .popup-gallery
+            height: 100%
+            .row
+                width: 100%
+                padding: 0
+                margin: 0
+        .container-fluid
+            width: 100%
+            height: 100%
+            padding: 0
+            .row
+                height: 100%
+            .col-md-3
+                padding: 0
+            a
+                img
+                    height: 100%
+                    width: 100%
+                    position: relative
+                    transition: 0.4s linear
+                    &:after
+                        position: absolute
+                        width: 100%
+                        height: 100%
+                        top: 0
+                        left: 0
+                        background: linear-gradient( 90deg, rgb(75,51,93) 0%, rgb(123,37,187) 100%)
+                        transition: 0.4s linear
+                        opacity: 0
+                        content: '\f00e'
+                        font-family: FontAwesome
+                        color: #fff
+                        font-weight: 400
+                        text-align: center
+                        font-size: 5rem
+                        padding-top: 9rem 
+                        box-shadow: 0 0 0.5rem rgba(0,0,0,0.5);
+                &:hover
+                    
+                    img
+                        transform: scale(1.1)
+                        z-index: 500
+                        &::after
+                            opacity: 0.751
+                            transform: scale(1.1)
+                            z-index: 501
+           
+                
+            
+                
+
+//Стоимость 
+.cost
+    width: 100vw
+    .cost-wrap
+        height: 22rem
+        position: relative
+        background: linear-gradient( 0deg, rgb(255,132,65) 0%, rgb(250,46,46) 100%)
+        .text-wrap
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            z-index: 1000
+            p
+                font-size: 2.7rem
+                font-family: $PtSans-B
+                color: #fff
+                line-height: 1.2
+                text-align: center
+        .arrow
+            position: absolute
+            width: 100%
+            height: 100%
+            z-index: 5
+            img
+                position: absolute
+                left: 50%
+                top: 95%
+                transform: translate(-50%, -95%)
+    .container-wrap
+        background-color: #e9e9e9
+        height: 67rem
+        padding-top: 4rem
+        position: relative
+        .in-cost
+            position: absolute
+            width: 100%
+            top: 95%
+            transform: translateY(-95%)
+            font-size: 1.4
+            text-align: center
+            line-height: 1.3
+        .base, .advanced
+            
+            border-radius: 0.5rem
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0rem 0.1rem 0.2rem 0rem rgba(0, 0, 0, 0.1);
+            height: 53.7rem
+            background-color: #fff
+            overflow: hidden
+            .items
+                width: 100%
+                .row
+                    width: 100%
+                    margin: 0
+                    .col-md-1
+                        padding-left: 0
+                    .col-md-9
+                        padding-left: 0
+        .advanced
+            margin-left: 1.5rem
+            margin-right: 4.5rem
+            .head
+                background: linear-gradient( 90deg, rgb(42,0,255) 0%, rgb(123,37,187) 100%)
+            .text-wrap
+                background-color: #5d5d5d
+            .content-wrap
+                .text
+                    padding: 2.5rem 3rem 0rem 3rem
+            .items
+                padding: 2.5rem 2.5rem 2rem 3rem
+        .base
+            margin-left: 4.5rem
+            margin-right: 1.5rem
+            .head
+                background-color: #5d5d5d
+            .text-wrap
+                background: linear-gradient( 90deg, rgb(42,0,255) 0%, rgb(123,37,187) 100%)
+            .content-wrap
+                .text
+                    padding: 2.5rem 3rem 3rem 3rem
+            .items
+                padding: 3rem 2.5rem 2rem 3rem
+                
+        .base, .advanced
+            .head
+                width: 100%
+                height: 10rem
+                z-index: 403
+                position: relative
+                p
+                    width: 100%
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    text-align: center
+                    font-size: 3.5rem
+                    font-family: $PtSans-R
+                    color: #fff
+            .text-wrap
+                width: 100%
+                height: 5.9rem
+                z-index: 403
+                position: relative
+                .p-wrap
+                    
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    text-align: center
+                    font-size: 2.7rem
+                    font-family: $PtSans-R
+                    color: #fff
+                    p
+                        padding-left: 1rem
+                        float: left
+                        text-align: center
+            .content-wrap
+                width: 100%
+                position: relative
+                .text
+                    p
+                        text-align: left
+                        font-size: 1.4rem
+                        font-family: $PtSans-R
+                        color: #000
+                        line-height: 1.2
+                        color: #5d5d5d
+                .items
+                    position: relative
+                    .item
+                        clear: both
+                        .f-img
+                            float: left
+                            margin-top: 0.6rem
+                        p
+                            font-size: 1.6rem
+                            font-family: $PtSans-R
+                            color: #5d5d5d
+                            float: left
+                            width: 22rem
+                            padding-left: 1rem
+                button
+                    position: absolute
+                    border-radius: 0.5rem
+                    background-color: rgb(68, 203, 122)
+                    box-shadow: 0 1rem 2rem 0rem rgba(0, 0, 0, 0.2),inset 0rem -0.1rem 0rem 0rem rgba(0, 0, 0, 0.1)
+                    width: 25.4rem
+                    height: 5rem
+                    border-color: transparent
+                    color: #fff
+                    font-size: 2rem
+                    font-family: $PtSans-R
+                    left: 50%
+                    transform: translateX(-50%)
+                    top: 100% 
+//Форма 2
+section.form
+    width: 100vw
+    position: relative
+    .form-h-wrap
+        height: 45rem
+        overflow: hidden
+        position: relative
+        .img-wrap
+            position: absolute
+            width: 100%
+            height: 100%
+            z-index: 0
+            overflow: hidden
+            .img-responsive
+                transform: translateY(-66%)
+                position: absolute
+                top: 66%
+                z-index: 1
+            &:before
+                content: ''
+                position: absolute
+                width: 100%
+                height: 100%
+                background: linear-gradient( 90deg, rgb(75,51,93) 0%, rgb(123,37,187) 100%)
+                opacity: 0.89
+                z-index: 4
+    .container
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        .form-wrap
+            
+            border-radius: 1rem
+            background-color: rgba(153, 98, 195, 0.502)
+            width: 100%
+            height: 23rem
+            z-index: 1
+            .text-wrap
+                margin: 1rem
+                p
+                    font-size: 2.7rem
+                    font-family: $PtSans-R
+                    font-weight: 100
+                    text-align: center
+                    color: #fff
+            form
+                .row
+                    padding: 0 2rem
+                .col-md-6
+                    padding: 1rem
+                input
+                    border: 0.1rem solid #fff
+                    border-radius: 0.5rem
+                    width: 100%
+                    height: 4.3rem
+                    background: transparent
+                    padding-left: 1.5rem
+                    &::-webkit-input-placeholder
+                        color: #fff
+                        font-size: 1.5rem
+                        font-family: $PtSans-I
+
+                button
+                    border: 0.1rem solid rgb(68, 203, 122)
+                    border-radius: 0.5rem
+                    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2),inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
+                    width: 100%
+                    height: 4.3rem
+                    background-color: rgb(68, 203, 122)
+                    font-size: 2rem
+                    font-family: $PtSans-R
+                    text-align: center
+                    color: #fff
+            .info
+                line-height: 1.1
+                font-size: 1.4rem
+                font-family: $PtSans-R
+                text-align: center 
+                opacity: 1
+                color: #fff
+                padding-top: 1rem
+
+//преемущества 2
+.advantages-2
+    width: 100vw
+    .advantages-wrap
+        height: 22rem
+        overflow: hidden
+        position: relative
+        .arrow
+            position: absolute
+            width: 100%
+            height: 100%
+            z-index: 5
+            img
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%)
+        .img-wrap
+            position: absolute
+            width: 100%
+            height: 100%
+            z-index: 0
+            overflow: hidden
+            .img-responsive
+                margin-top: -27rem
+                position: relative
+                z-index: 1
+            &:before
+                content: ''
+                position: absolute
+                width: 100%
+                height: 100%
+                background: linear-gradient( 90deg, #dfe624 0%, #44cb7a 100%) 
+                opacity: 1
+                z-index: 4
+        
+        .text-wrap
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            p
+                font-size: 2.7rem
+                font-family: $PtSans-B
+                color: #fff
+                line-height: 1.2
+                text-align: center  
+.advantages-2
+    width: 100vw
+    .advant
+        color: #5d5d5d
+        .col-md-5, .col-sm-5
+            padding-left: 3rem
+            padding-right: 3rem
+        .normal
+            background-color: #fff
+            .col-md-3, .col-sm-3
+                .img-wrap
+                    margin-left: 2rem
+                    background: linear-gradient( 90deg, #dfe624 0%, #44cb7a 100%) 
+                    .img-wrap-2
+                        background: #fff
+        .reverse
+            background-color: #f8f8f8
+            .col-md-3, .col-sm-3
+                .img-wrap
+                    margin-left: 2rem
+                    .img-wrap-2
+                        background: #f8f8f8
+        .advant-item
+            padding: 5rem 0
+            .text-wrap
+                h5
+                    font-family: $PtSans-B
+                    font-size: 2rem
+                p
+                    font-family: $PtSans-R
+                    font-size: 1.6rem
+            .img-wrap
+                background: linear-gradient( -90deg, #dfe624 0%, #44cb7a 100%) 
+                width: 18.4rem
+                height: 18.4rem 
+                border-radius: 50%
+                position: relative
+                .img-wrap-2
+                    border-radius: 50%
+                    width: 18rem
+                    height: 18rem
+                    overflow: hidden
+                    border-style: solid
+                    border-width: 0rem
+                    background: #fff
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    img
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)   
+
+//руководитель
+.manager
+    width: 100vw
+    position: relative
+    .manager-wrap
+        height: 42rem
+        overflow: hidden
+        position: relative
+        .img-wrap
+            position: absolute
+            width: 100%
+            height: 100%
+            z-index: 0
+            overflow: hidden
+            .img-responsive
+                transform: translateY(-95%)
+                position: absolute
+                top: 92%
+                z-index: 1
+            &:before
+                content: ''
+                position: absolute
+                width: 100%
+                height: 100%
+                background: linear-gradient( 90deg, #32d8ff 0%, #006cea 100%)
+                opacity: 0.89
+                z-index: 4
+    .manager-block
+        position: absolute
+        height: 42rem
+        border-radius: 0.5rem
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0rem 0.1rem 0.2rem 0rem rgba(0, 0, 0, 0.1);
+        width: 76rem
+        height: 30rem
+        z-index: 500
+        overflow: hidden
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        .content-wrap
+            padding: 1.5rem 3rem 3rem 3rem
+            img
+                float: left
+            .head
+                float: left
+                margin-left: 1rem
+                margin-top: 1rem
+                h5
+                    font-size: 2rem
+                    font-family: $PtSans-B
+                    line-height: 1
+                    color: #5d5d5d
+                span
+                    float: left
+                    font-size: 1.6rem
+                    font-family: $PtSans-B
+                    color: #9e9e9e
+                p
+                    font-size: 3.3rem
+                    font-family: $la_C
+                    color: #9e9e9e
+                    margin-top: -1.6rem
+                    margin-left: 0.4rem
+                    float: left
+            .text
+                padding: 1rem 0
+                clear: both
+                p
+                    font-size: 1.6rem
+                    font-family: $PtSans-R
+                    line-height: 1.2
+                    color: #5d5d5d
+                    
+//гарантии
+.garanty
+    width: 100vw
+    height: 44.6rem
+    width: 100%
+    position: relative
+    color: #5d5d5d
+    .content-wrap
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        position: absolute
+        width: 100%
+        .gradient-wrap
+            border-radius: 1rem
+            width: 100%
+            height: 32.6rem
+            z-index: 256
+            background: linear-gradient( 90deg, #fa2e2e 0%, #ff8441 100%)
+            position: relative
+            .our-garanty
+                color: #5d5d5d
+                border-radius: 1rem
+                width: 99.5%
+                height: 99%
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%)
+                position: absolute
+                overflow: hidden
+                background-color: #fff
+                z-index: 290
+                padding: 0 5rem
+                .text
+                    margin-top: 3.5rem
+                    margin-bottom: 3rem
+                    text-align: center
+                    h5
+                        font-size: 2rem
+                        font-family: $PtSans-B
+                    p
+                        font-size: 1.6rem
+                        font-family: $PtSans-R
+                        line-height: 1.2
+                .items
+                    position: relative
+                    .item
+                        width: 18rem
+                        position: absolute
+                        text-align: center
+                        .img-wrap
+                            height: 8rem
+                        p
+                            font-size: 1.5rem
+                            font-family: $PtSans-B
+                            line-height: 1.2
+                        &:nth-child(1)
+                            left: 0
+                        &:nth-child(2)
+                            left: 50%
+                            transform: translateX(-50%)
+                        &:nth-child(3)
+                            left: 100%
+                            transform: translateX(-100%)
+                
+//Отзывы
+.comment
+    width: 100vw
+    .advantages-wrap
+        height: 22rem
+        overflow: hidden
+        position: relative
+        .text-wrap
+            position: absolute
+            top: 40%
+            left: 50%
+            transform: translate(-50%,-40%)
+            z-index: 1000
+            p
+                font-size: 2.7rem
+                font-family: $PtSans-B
+                color: #fff
+                line-height: 1.2
+                text-align: center
+        .arrow
+            position: absolute
+            width: 100%
+            height: 100%
+            z-index: 5
+            img
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%)
+        .img-wrap
+            position: absolute
+            width: 100%
+            height: 100%
+            z-index: 0
+            overflow: hidden
+            .img-responsive
+                margin-top: -27rem
+                position: relative
+                z-index: 1
+            &:before
+                content: ''
+                position: absolute
+                width: 100%
+                height: 100%
+                background: linear-gradient( 90deg, #dfe624 0%, #44cb7a 100%) 
+                opacity: 1
+                z-index: 4
+        .container
+            z-index: 100
+            .col-md-10
+                padding: 0
+                width: 83rem
+            .text-wrap
+                margin-top: 7rem
+                p
+                    font-size: 2.7rem
+                    font-family: $PtSans-B
+                    color: #fff
+                    line-height: 1.2
+                    text-align: center
+    .achievements
+        color: #5d5d5d
+        .normal
+            background-color: #f8f8f8
+            .col-md-3
+                .img-wrap
+                    margin-left: 2rem
+        .reverse
+            background-color: #fff
+        .achiev-item
+            padding: 5rem 0
+            .text-wrap
+                .head
+                    h5
+                        font-size: 2rem
+                        font-family: $PtSans-B
+                        line-height: 1
+                    p
+                        font-size: 1.6rem
+                        font-family: $PtSans-B
+                        color: #9e9e9e
+
+                .txt
+                    padding-top: 1.5rem
+                    p
+                        font-size: 1.5rem
+                        font-family: $PtSans-R
+                        line-height: 1.2 
+                    
+            .img-wrap
+                border-radius: 50%;
+                background-color: rgb(67, 67, 67);
+                box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+                width: 18rem
+                height: 18rem
+                overflow: hidden
+                img
+                    width: 100%
+                    height: 100%
+            &:nth-child(1)
+               
+            &:nth-child(2)
+               
+            &:nth-child(3)
+                
+                
+
+           
+//логотип
+.logotype  
+    width: 100vw
+    height: 166rem
+    position: relative
+    .advantages-wrap
+        height: 22rem
+        overflow: hidden
+        position: relative
+        .arrow
+            position: absolute
+            width: 100%
+            height: 100%
+            z-index: 5
+            img
+                position: absolute
+                left: 50%
+                top: 60%
+                transform: translate(-50%, -60%)
+        .text-wrap
+            position: absolute
+            top: 40%
+            left: 50%
+            transform: translate(-50%,-40%)
+            z-index: 1000
+            p
+                font-size: 2.7rem
+                font-family: $PtSans-B
+                color: #fff
+                line-height: 1.2
+                text-align: center
+        .img-wrap
+            position: absolute
+            width: 100%
+            height: 100%
+            z-index: 0
+            overflow: hidden
+            z-index: 1
+            .img-responsive
+                transform: translateY(-50%)
+                position: absolute
+                top: 50%
+                z-index: 1
+            &:before
+                content: ''
+                position: absolute
+                width: 100%
+                height: 100%
+                background: linear-gradient( 0deg, rgb(123,37,187) 0%, rgb(42,0,255) 100%)
+                opacity: 0.89
+                z-index: 4
+    //карты
+    .map
+        background-color: #f8f8f8
+        position: relative
+        height: 44.6rem
+        .content-wrap
+            position: absolute
+            top: 50%
+            left: 50%
+            height: 32.6rem
+            transform: translate(-50%, -50%)
+            .container
+                height: 32.6rem
+                .map-wrap
+                    border-radius: 1rem
+                    width: 100%
+                    height: 32.6rem
+                    z-index: 256
+                    background: linear-gradient( 90deg, #dfe624 0%, #44cb7a 100%) 
+                    .our-map
+                        position: relative
+                        color: #5d5d5d
+                        background-color: #f8f8f8
+                        border-radius: 1rem
+                        width: 99.5%
+                        height: 99%
+                        left: 50%
+                        top: 50%
+                        transform: translate(-50%, -50%)
+                        overflow: hidden
+                        z-index: 290
+                        padding: 3.7rem
+                        .text
+                            position: absolute
+                            top: 0
+                            text-align: center
+                            width: 100%
+                            left: 50%
+                            transform: translateX(-50%)
+                            background-color: #f8f8f8
+                            z-index: 300
+                            margin: 0
+                            padding: 2rem
+                            opacity: 1
+                            transition: 0.7s linear
+                            h5
+                                color: #5d5d5d
+                                font-size: 2rem
+                                font-family: $PtSans-B
+                            p
+                                color: #5d5d5d
+                                font-size: 1.8rem
+                                font-family: $PtSans-R
+                        #map 
+                            position: absolute
+                            top: 0
+                            left: 0
+                            height: 100%
+                            width: 100%
+                            border: 3.7rem solid #f8f8f8
+                            transition: 0.7s linear
+
+
+                    &:hover
+                        .text
+                            z-index: 0
+                            opacity: 0
+                        #map
+                            border: 0 solid #f8f8f8
+
+//логотипы иконки
+.logo-corparations
+    margin-top: 2rem
+    margin-bottom: 5rem
+    .col-md-3
+        height: 15.5rem
+        position: relative
+        img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            
+            
+//вврех
+.up
+    width: 100vw
+    background-color: #f8f8f8
+    position: relative
+    .button-up
+        border-radius: 50%
+        background-color: rgb(255, 255, 255)
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1)
+        width: 5rem
+        height: 5rem
+        position: relative
+        left: 50%
+        transform: translate(-50%,-50%)
+        border: 0 solid transparent
+        img
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%,-50%)
+    .pk
+        text-align: center
+        a
+            text-align: center
+            color: #5d5d5d
+            font-size: 1.3rem
+            font-family: $PtSans-R
+            text-decoration: underline
+    .made-by
+        padding-top: 1rem
+        height: 10rem
+        position: relative
+        p
+            
+            text-align: center
+            color: #5d5d5d
+            font-size: 1.3rem
+            font-family: $PtSans-R
+        button
+            position: relative
+            left: 50%
+            transform: translateX(-50%)
+            background: linear-gradient( 0deg, rgb(255,132,65) 0%, rgb(250,46,46) 100%);
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+            width: 10.9rem
+            height: 2.2rem
+            border-radius: 1.1rem
+            border: 0 solid transparent
+            p
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+                color: #fff
+                font-size: 1.3rem
+                font-family: $PtSans-B
+                
+
+            
+//Форма3
+.form-3-img
+    transform: scale(2) translateY(20%)
+    position: absolute
+    top: 20%
+    z-index: 1
+//Форма 4
+.form-4-img
+    transform: translateY(5%)
+    position: relative
+    z-index: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+@import "media" // Всегда в конце
